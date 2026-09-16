@@ -4,10 +4,10 @@
 
 # Console Idle
 
-**An idle Clicker Incrimintal Game in a Computer system like theme.**
+**An idle clicker incremental game with a computer system theme.**
 
-You are an agent who has just joined the fight against a hostile AI G.A.I.A.
-You build up the system, software, run bots, and fight G.A.I.A. for
+You are an agent who has just joined the fight against G.A.I.A., a hostile AI.
+You build up your system and software, run bots, and fight G.A.I.A. for
 control of the world map. Progress keeps running while you are away.
 
 **Play it:** [Console Idle on CrazyGames](https://www.crazygames.com/game/console-idle)
@@ -30,14 +30,14 @@ control of the world map. Progress keeps running while you are away.
 ## What the player does
 
 ### Build a machine
-Buy Hardware, Software, CPUs, GPUs and RAM. Each part adds power, and each part adds heat. A
+Buy hardware and software, including CPUs, GPUs and RAM. Each part adds power, and each part adds heat. A
 performance panel shows the load and temperature of every part, so the player
 has to balance speed against cooling.
 
 
 ### Run bots
 Automation bots do repeated work for the player. Battle bots go out to fight.
-assign them in the Bot Manager panel, upgrades them, and send them to battle.
+Assign them in the Bot Manager panel, upgrade them, and send them to battle.
 
 ### Fight G.A.I.A. across a world map
 G.A.I.A. attacks with its own set of moves: cracking passwords, fake
@@ -109,26 +109,26 @@ play. The build is also packed down to a small set of files for upload.
 ## What I would do differently
 
 This was my first large project, and I built it to learn by shipping. The code
-is Hot spaghetti and lasagna, but that was intended, because the focus was to actually
-write code and learn and ship, not to make actual good design, which helped my a lot, 
-because by writing this messy code, i now understand system design patterns more.
+is "hot spaghetti and lasagna", and that was on purpose. The focus was to write
+code, learn, and ship, not to make a good design. That helped me a lot: by
+writing messy code, I now understand system design patterns better.
 The code works and the game is live, but it grew as one large script with a lot of shared
 global state and repeated logic. Today I would split it into modules, keep the
 game state in one typed store, and cover the balance math with tests. My later
 work, such as TruePunch, is built that way.
 
 
-## What I leanred from this as a first published project?
+## What I learned from my first published project
 - The importance of comments.
-- Splitting the functions, and the importance of absolutely each function do exactly one job, never both.
-- The idea of several systems working together and data flow between them.
+- Splitting functions, so that each function does exactly one job, never two.
+- How several systems work together, and how data flows between them.
 - More in depth topics about performance and loops.
-- Better understanding of general software mental thinking.
-- Testing, writing code for purpose of testing and bugs investigation.
-- The Day zero Idea, where you build something Early to prevent later problems.
-- The importance of separating Systems, like Texts layer, Logic layer, UI layer.
-- Many Browser and software related topics, for example, syncopations, parallels, APIs, some ideas about Data oriented programming.
-- many more..., the list keeps going
+- A better understanding of how to think about software in general.
+- Testing, and writing code that is easy to test and debug.
+- The day zero idea: build something early to prevent problems later.
+- The importance of separating systems into layers, like a text layer, a logic layer and a UI layer.
+- Many browser and software topics, for example synchronous and asynchronous code, parallel work, APIs, and some ideas from data oriented programming.
+- And many more.
 
 ---
 
