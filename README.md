@@ -123,7 +123,7 @@ work, such as TruePunch, is built that way.
 - Splitting the functions, and the importance of absolutely each function do exactly one job, never both.
 - The idea of several systems working together and data flow between them.
 - More in depth topics about performance and loops.
-- Better understanding of general software metal thinking.
+- Better understanding of general software mental thinking.
 - Testing, writing code for purpose of testing and bugs investigation.
 - The Day zero Idea, where you build something Early to prevent later problems.
 - The importance of separating Systems, like Texts layer, Logic layer, UI layer.
