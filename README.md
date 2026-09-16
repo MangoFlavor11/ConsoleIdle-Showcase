@@ -4,10 +4,10 @@
 
 # Console Idle
 
-**An idle hacking game played inside a computer terminal.**
+**An idle Clicker Incrimintal Game in a Computer system like theme.**
 
-You are an agent who has just joined a network run by G.A.I.A., a hostile AI.
-You build up a computer, write software, run bots, and fight G.A.I.A. for
+You are an agent who has just joined the fight against a hostile AI G.A.I.A.
+You build up the system, software, run bots, and fight G.A.I.A. for
 control of the world map. Progress keeps running while you are away.
 
 **Play it:** [Console Idle on CrazyGames](https://www.crazygames.com/game/console-idle)
@@ -20,7 +20,7 @@ control of the world map. Progress keeps running while you are away.
 |---|---|
 | Genre | Idle / incremental, with auto battles |
 | Platform | Web browser |
-| Released on | CrazyGames, with earlier builds on itch.io and a GameMonetize build |
+| Released on | CrazyGames, with earlier builds on itch.io |
 | Current version | 1.0.4 |
 | Built by | One person: design, code, balance and UI |
 | Size | About 52,000 lines of JavaScript, 6,000 lines of CSS |
@@ -30,16 +30,14 @@ control of the world map. Progress keeps running while you are away.
 ## What the player does
 
 ### Build a machine
-Buy CPUs, GPUs and RAM. Each part adds power, and each part adds heat. A
+Buy Hardware, Software, CPUs, GPUs and RAM. Each part adds power, and each part adds heat. A
 performance panel shows the load and temperature of every part, so the player
 has to balance speed against cooling.
 
-### Craft components from logic gates
-Components are assembled from AND, OR, NOT, NAND, NOR, XOR and XNOR gates.
 
 ### Run bots
 Automation bots do repeated work for the player. Battle bots go out to fight.
-A bot manager assigns them, upgrades them, and tracks what each one earns.
+assign them in the Bot Manager panel, upgrades them, and send them to battle.
 
 ### Fight G.A.I.A. across a world map
 G.A.I.A. attacks with its own set of moves: cracking passwords, fake
@@ -111,17 +109,26 @@ play. The build is also packed down to a small set of files for upload.
 ## What I would do differently
 
 This was my first large project, and I built it to learn by shipping. The code
-works and the game is live, but it grew as one large script with a lot of shared
+is Hot spaghetti and lasagna, but that was intended, because the focus was to actually
+write code and learn and ship, not to make actual good design, which helped my a lot, 
+because by writing this messy code, i now understand system design patterns more.
+The code works and the game is live, but it grew as one large script with a lot of shared
 global state and repeated logic. Today I would split it into modules, keep the
 game state in one typed store, and cover the balance math with tests. My later
 work, such as TruePunch, is built that way.
 
----
 
-## Related work
-
-- [TruePunch web dashboard](https://github.com/MangoFlavor11/TruePunch-Showcase)
-- [TruePunch Android app](https://github.com/MangoFlavor11/TruePunchApp-Showcase)
+## What I leanred from this as a first published project?
+- The importance of comments.
+- Splitting the functions, and the importance of absolutely each function do exactly one job, never both.
+- The idea of several systems working together and data flow between them.
+- More in depth topics about performance and loops.
+- Better understanding of general software metal thinking.
+- Testing, writing code for purpose of testing and bugs investigation.
+- The Day zero Idea, where you build something Early to prevent later problems.
+- The importance of separating Systems, like Texts layer, Logic layer, UI layer.
+- Many Browser and software related topics, for example, syncopations, parallels, APIs, some ideas about Data oriented programming.
+- many more..., the list keeps going
 
 ---
 
